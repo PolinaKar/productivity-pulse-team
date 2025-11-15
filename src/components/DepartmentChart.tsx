@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from "recharts";
 
 interface DepartmentChartProps {
   title: string;
@@ -25,12 +25,29 @@ export function DepartmentChart({ title, data, color }: DepartmentChartProps) {
             <YAxis 
               stroke="hsl(var(--muted-foreground))"
               fontSize={12}
+              label={{ 
+                value: 'Activity Count', 
+                angle: -90, 
+                position: 'insideLeft',
+                style: { fontSize: 12, fill: 'hsl(var(--muted-foreground))' }
+              }}
             />
             <Tooltip 
               contentStyle={{
                 backgroundColor: "hsl(var(--card))",
                 border: "1px solid hsl(var(--border))",
                 borderRadius: "var(--radius)",
+              }}
+            />
+            <ReferenceLine 
+              y={75} 
+              stroke="hsl(var(--muted-foreground))" 
+              strokeDasharray="3 3"
+              label={{ 
+                value: 'Expected (75%)', 
+                position: 'right',
+                fill: 'hsl(var(--muted-foreground))',
+                fontSize: 12
               }}
             />
             <Line 

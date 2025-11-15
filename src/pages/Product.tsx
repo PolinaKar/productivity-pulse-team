@@ -8,8 +8,6 @@ const productData = [
   { name: "Wed", value: 20 },
   { name: "Thu", value: 25 },
   { name: "Fri", value: 23 },
-  { name: "Sat", value: 12 },
-  { name: "Sun", value: 8 },
 ];
 
 export default function Product() {

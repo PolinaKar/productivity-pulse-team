@@ -8,8 +8,6 @@ const hrData = [
   { name: "Wed", value: 10 },
   { name: "Thu", value: 15 },
   { name: "Fri", value: 14 },
-  { name: "Sat", value: 3 },
-  { name: "Sun", value: 2 },
 ];
 
 export default function HR() {
