@@ -8,8 +8,6 @@ const financeData = [
   { name: "Wed", value: 22 },
   { name: "Thu", value: 20 },
   { name: "Fri", value: 25 },
-  { name: "Sat", value: 8 },
-  { name: "Sun", value: 5 },
 ];
 
 export default function Finance() {

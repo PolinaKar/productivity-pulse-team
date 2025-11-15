@@ -8,8 +8,6 @@ const engineeringData = [
   { name: "Wed", value: 48 },
   { name: "Thu", value: 61 },
   { name: "Fri", value: 55 },
-  { name: "Sat", value: 28 },
-  { name: "Sun", value: 22 },
 ];
 
 export default function Engineering() {
